@@ -189,7 +189,7 @@ hr {
   HEADER
 **********/
 header.masthead {
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/lataberna.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/lataberna.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -439,7 +439,7 @@ header.masthead .intro-text .intro-heading {
 ***********/
 section#contact {
   background-color: #212529;
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/lataberna.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/lataberna.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
