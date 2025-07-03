@@ -249,73 +249,77 @@ header.masthead .intro-text .intro-heading {
     max-width: 400px
 }
 
-#menu * {
-    z-index: 2
+.menu-section * {
+    z-index: 2;
 }
 
-#menu .menu-item {
+.menu-section .menu-item {
     margin: 0 0 15px;
-    right: 0
+    right: 0;
 }
 
-@media (min-width: 767px) {
-    #menu .menu-item {
-        margin: 0 0 30px
+@media (min-width: 992px) {
+    .menu-section .menu-item {
+        margin: 0 0 30px;
     }
 }
 
-#menu .menu-item .menu-link {
+.menu-section .menu-item .menu-link {
     cursor: pointer;
     display: block;
     margin: 0 auto;
     max-width: 400px;
-    position: relative
+    position: relative;
 }
 
-#menu .menu-item .menu-link .menu-hover {
-    background-color: rgba(231, 76, 60, .9);
-    opacity: 0;
+/* Estas reglas controlan el efecto hover en cualquier .menu-item */
+.menu-item .menu-link .menu-hover {
+    background-color: rgba(231, 76, 60, 0.9); /* Color de fondo del hover */
+    opacity: 0; /* Inicialmente transparente (oculto) */
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
-    transition: all ease 0.5s
+    transition: all ease 0.5s;
 }
 
-#menu .menu-item .menu-link .menu-hover:hover {
-    opacity: 1
+/* Cuando se hace hover sobre el enlace, el overlay se vuelve visible */
+.menu-item .menu-link:hover .menu-hover {
+    opacity: 1;
 }
 
-#menu .menu-item .menu-link .menu-hover .menu-hover-content {
-    color: #fff;
+/* Estilos para el contenido dentro del hover (el icono de lupa) */
+.menu-item .menu-link .menu-hover .menu-hover-content {
+    color: #fff; /* Color del icono */
     font-size: 20px;
-    margin-top: -12px;
+    margin-top: -12px; /* Centra verticalmente el icono */
     position: absolute;
     text-align: center;
     top: 50%;
     height: 20px;
-    width: 100%
+    width: 100%;
 }
 
-#menu .menu-item .menu-link .menu-hover .menu-hover-content i {
-    margin-top: -12px
+.menu-item .menu-link .menu-hover .menu-hover-content i {
+    /* margin-top: -12px; */
 }
 
-#menu .menu-item .menu-caption {
+.menu-section .menu-item .menu-caption {
     background-color: #fff;
     max-width: 400px;
     margin: 0 auto;
     padding: 25px;
-    text-align: center
+    text-align: center;
 }
 
-#menu .menu-item .menu-caption p {
+.menu-section .menu-item .menu-caption p {
     font-family: 'Droid Serif', sans-serif;
     font-size: 16px;
     font-style: italic;
-    margin: 0
+    margin: 0;
 }
+
 
 .menu-modal {
     padding-right: 0 !important

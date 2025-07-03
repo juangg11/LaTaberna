@@ -267,31 +267,24 @@ header.masthead .intro-text .intro-heading {
 /********
   MENU
 ********/
-#menu * {
+.menu-section, 
+.menu-section * {
   z-index: 2;
 }
 
-#menu .menu-item {
+.menu-section .menu-item {
   margin: 0 0 15px;
   right: 0;
 }
 
 @media (min-width: 767px) {
-  #menu .menu-item {
+  .menu-section .menu-item {
     margin: 0 0 30px;
   }
 }
 
-#menu .menu-item .menu-link {
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  max-width: 400px;
-  position: relative;
-}
-
-#menu .menu-item .menu-link .menu-hover {
-  background-color: rgba(231, 76, 60, .9);
+.menu-item .menu-link .menu-hover {
+  background-color: rgba(231, 76, 60, .9); 
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -301,11 +294,11 @@ header.masthead .intro-text .intro-heading {
   transition: all ease 0.5s;
 }
 
-#menu .menu-item .menu-link .menu-hover:hover {
+.menu-item .menu-link:hover .menu-hover {
   opacity: 1;
 }
 
-#menu .menu-item .menu-link .menu-hover .menu-hover-content {
+.menu-item .menu-link .menu-hover .menu-hover-content {
   color: #fff;
   font-size: 20px;
   margin-top: -12px;
@@ -316,11 +309,10 @@ header.masthead .intro-text .intro-heading {
   width: 100%;
 }
 
-#menu .menu-item .menu-link .menu-hover .menu-hover-content i {
-  margin-top: -12px;
+.menu-item .menu-link .menu-hover .menu-hover-content i {
 }
 
-#menu .menu-item .menu-caption {
+.menu-section .menu-item .menu-caption {
   background-color: #fff;
   max-width: 400px;
   margin: 0 auto;
@@ -328,12 +320,13 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
 }
 
-#menu .menu-item .menu-caption p {
+.menu-section .menu-item .menu-caption p {
   font-family: 'Droid Serif', sans-serif;
   font-size: 16px;
   font-style: italic;
   margin: 0;
 }
+
 
 /**************
   MENU MODALS
