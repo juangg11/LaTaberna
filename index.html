@@ -15,6 +15,21 @@
   <link href="assets/css/style.min.css" rel="stylesheet">
   <link rel="icon" href="assets/favicon.ico">
 
+  <style>
+    .menu-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .modal-body .row .col-4 img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+  </style>
+
   <title>La Taberna Carboneras</title>
 </head>
 
@@ -228,9 +243,88 @@
             <p class="text-muted">Sarmale</p>
           </div>
         </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#menuModal10">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/Calamares12.png" alt="Calamares Grandes">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Calamares Grandes</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#menuModal11">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/atun.png" alt="Atun">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Atún</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#menuModal12">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/dorada.png" alt="Dorada">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Dorada</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#menuModal13">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/Lenguado.png" alt="Lenguado">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Lenguado</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#menuModal14">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/PatatasConHuevo.png" alt="Papas con Huevo">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Patatas con Huevo</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#menuModal15">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/SalteadoQuinoa.png" alt="Salteado de Quinoa">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Salteado de Quinoa</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
   <section class="bg-light menu-section" id="postres">
     <div class="container">
       <div class="row">
@@ -279,6 +373,20 @@
             <p class="text-muted">Pastelitos Variados</p>
           </div>
         </div>
+        <div class="col-md-4 col-sm-6 menu-item">
+          <a class="menu-link" data-toggle="modal" href="#postreModal4">
+            <div class="menu-hover">
+              <div class="menu-hover-content">
+                <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/menu/thumbnail/TulipaDeVainillaYLecheFrita.png"
+              alt="Tulipa y Tomate">
+          </a>
+          <div class="menu-caption">
+            <p class="text-muted">Tulipa y Tomate</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -293,12 +401,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <div id="map">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <div id="map" class="w-100" style="max-width: 800px;">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d800.4459197676052!2d-1.8929416905018484!3d36.99650676633792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1719776774000!5m2!1ses!2ses"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              width="100%" height="450" style="border:0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
         </div>
@@ -309,7 +417,8 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
+          <span class="copyright d-block mb-4">© 2026 La Taberna</span>
           <ul class="list-inline social-buttons mb-0">
             <li class="list-inline-item">
               <a href="tel:+34690276449">
@@ -339,7 +448,8 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <h2 class="text-uppercase">Fritura de Pescado</h2>
-                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/Fritura.png" alt="Fritura de Pescado">
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/Fritura.png"
+                  alt="Fritura de Pescado">
                 <ul class="list-inline">
                   <li><span class="font-weight-bold">Pescado y Marisco</span></li>
                   <li><span class="font-weight-bold">Precio:</span> 20 € por persona</li>
@@ -448,7 +558,8 @@
                 <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/calamar.jpg" alt="Calamar">
                 <ul class="list-inline">
                   <li><span class="font-weight-bold">Pescado y Mariscos</span></li>
-                  <li><span class="font-weight-bold">Precio:</span> 18 € (Plancha) 19 € (Aceite) 20 € (Encebollado)</li>
+                  <li><span class="font-weight-bold">Precio:</span> 18 € (Plancha) 19 € (Aceite) 20 €
+                    (Encebollado)</li>
                 </ul>
                 <button class="btn btn-danger" data-dismiss="modal" type="button">
                   Cerrar
@@ -505,7 +616,8 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <h2 class="text-uppercase">Hamburguesa de Angus</h2>
-                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/hamburguesa.png" alt="Hamburguesa">
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/hamburguesa.png"
+                  alt="Hamburguesa">
                 <ul class="list-inline">
                   <li><span class="font-weight-bold">Carnes</span></li>
                   <li><span class="font-weight-bold">Precio:</span> 12 €</li>
@@ -599,6 +711,221 @@
                 <ul class="list-inline">
                   <li><span class="font-weight-bold">Especialidades</span></li>
                   <li><span class="font-weight-bold">Precio:</span> 13 €</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="menuModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Calamares Grandes</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/Calamares12.png"
+                  alt="Calamares Grandes">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Pescados y Mariscos</span></li>
+                  <li><span class="font-weight-bold">Precio:</span> 12 €</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="menuModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Atún</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/atun.png" alt="Atun">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Pescados y Mariscos</span></li>
+                  <li><span class="font-weight-bold">Precio:</span> Consultar</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="menuModal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Dorada</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/dorada.png" alt="Dorada">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Pescados y Mariscos</span></li>
+                  <li><span class="font-weight-bold">Precio:</span> Consultar</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="menuModal13" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Lenguado</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/Lenguado.png" alt="Lenguado">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Pescados y Mariscos</span></li>
+                  <li><span class="font-weight-bold">Precio:</span> Consultar</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="menuModal14" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Patatas con Huevo</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/PatatasConHuevo.png"
+                  alt="Papas con Huevo">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Acompañamientos</span></li>
+                  <li><span class="font-weight-bold">Precio:</span> Consultar</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="menuModal15" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Salteado de Quinoa</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/SalteadoQuinoa.png"
+                  alt="Salteado de Quinoa">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Verduras y Saludable</span></li>
+                  <li><span class="font-weight-bold">Lleva:</span> tomate, col verde, soja, cebolla, puerro y habas</li>
+                  <li><span class="font-weight-bold">Precio:</span> Consultar</li>
+                </ul>
+                <button class="btn btn-danger" data-dismiss="modal" type="button">
+                  Cerrar
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal modal fade" id="postreModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Tulipa y Tomate</h2>
+                <img class="img-fluid d-block mx-auto" src="assets/img/menu/thumbnail/TulipaDeVainillaYLecheFrita.png"
+                  alt="Tulipa y Tomate">
+                <ul class="list-inline">
+                  <li><span class="font-weight-bold">Verduras</span></li>
+                  <li><span class="font-weight-bold">Precio:</span> Consultar</li>
                 </ul>
                 <button class="btn btn-danger" data-dismiss="modal" type="button">
                   Cerrar
